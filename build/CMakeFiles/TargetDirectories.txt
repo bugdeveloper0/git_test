@@ -1,0 +1,4 @@
+C:/Users/20114/Desktop/test/build/CMakeFiles/helloWorld.dir
+C:/Users/20114/Desktop/test/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/20114/Desktop/test/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/20114/Desktop/test/build/MathFunctions/CMakeFiles/MathFunctions.dir

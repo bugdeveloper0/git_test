@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+project(helloWorld VERSION 4.2)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+option(USE_MYMATH "Use helloWorld provided math implementation" ON)
+configure_file(helloWorld.h.in helloWorld.h)
+if(USE_MYMATH)
+    add_subdirectory(MathFunctions)
+    list(APPEND EXTRA_LIBS MathFunctions)
+    list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
+endif()
+add_executable(helloWorld helloWorld.cxx)
+target_link_libraries(helloWorld PUBLIC ${EXTRA_LIBS})
+target_include_directories(helloWorld PUBLIC
+    "${PROJECT_BINARY_DIR}"
+    ${EXTRA_INCLUDES}
+    )

@@ -1,0 +1,3 @@
+#cmakedefine USE_MYMATH
+#define helloWorld_VERSION_MAJOR @helloWorld_VERSION_MAJOR@
+#define helloWorld_VERSION_MINOR @helloWorld_VERSION_MINOR@

@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+project(helloWorld VERSION 3.2)
+configure_file(helloWorld.h.in helloWorld.h)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+add_executable(helloWorld helloWorld.cxx)
+target_include_directories(helloWorld PUBLIC
+	"${PROJECT_BINARY_DIR}"
+	)
