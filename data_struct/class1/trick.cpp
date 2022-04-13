@@ -7,6 +7,8 @@ inline int read()
     return ~(X-1);
 }
 
+
+
 inline void write(int X)
 {
     if(X<0) {X=~(X-1); putchar('-');}
