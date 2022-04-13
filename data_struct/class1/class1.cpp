@@ -2,7 +2,7 @@
 int main(int argc, char** argv)
 {
     int i;
-    char array[10] = "as5x0xjjk";
+    char array[10] = "as5x0xj";
     char num = 0x30;
     std::cout << num << std::endl;
     int a[10] = {1, 2, 3, 45, 21, 5, 54, 23};
